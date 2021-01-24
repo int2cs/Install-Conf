@@ -1,0 +1,25 @@
+Télécharger et installer Git :
+https://git-scm.com/
+
+Configuration: 
+- Ajouter  notre "identité"
+-- git config --global user.name "Votre nom ici"
+-- git config --global user.email "Votreadresse@email.com"
+
+
+
+Envoyer les fichiers sur GitHub:
+- git add fichier.txt
+	|_> ou git add *   // Ajoute les fichiers & dossiers à la liste 
+- git commit -- message "message"	// Ajout d'un message pour indiquer les modification apporté au fichiers envoyés
+- git push
+
+
+Réception des fichiers
+- Clône
+-- git clone adresseDuRepository -> ex: https://github.com/pseudo/repository.git
+
+- Pull
+se placer dans le dossier correspondant 
+-- git pull
+ 
