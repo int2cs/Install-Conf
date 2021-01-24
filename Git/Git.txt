@@ -25,4 +25,34 @@ Réception des fichiers
 
 Commandes:
 - git diff // Permet d'afficher les modification apporté au fichier avant de le commit
+- git log // Permet d'afficher la liste de toutes les modifications apporté (Autheur, Dâte, commit etc...)
+
+- git checkout branche2 // se déplacer sur la branche2
+			// la branche principal est appelée : master)
+
+Branching:
+	Permet d'apporter des modifications à des fichiers sans altérer la branche principale (branch master).
+	On se créer une nouvelle branche concernant une feature particulière, on modifie ce que l'on a à modifier
+
+- git branch my-feature // crée une nouvelle branch
+
+- git branch // liste les branches d'un repository
+
+	Il est de bonne pratique de supprimer une branche une fois celle-ci terminée et mergée !
+- git branch -d branch2 //Supprime la branche2
+
  
+
+Merge:
+	Une fois qu'une branche est terminé, nous allons tout naturellement vouloir l'ajouter à notre branche 			principale.
+
+//on se positionne donc sur le branche principal
+- git checkout master
+//nous pouvons examiner les différences entre les 2 branches
+- git diff master..branch2
+//on apporte les changements des la branche2 sur la branche principal
+- git merge branch2
+
+
+
+Lien Youtube -->> https://www.youtube.com/watch?v=V6Zo68uQPqE&ab_channel=LeWagon
