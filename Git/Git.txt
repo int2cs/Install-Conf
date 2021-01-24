@@ -20,6 +20,9 @@ Réception des fichiers
 -- git clone adresseDuRepository -> ex: https://github.com/pseudo/repository.git
 
 - Pull
-se placer dans le dossier correspondant 
+	//se placer dans le dossier correspondant 
 -- git pull
+
+Commandes:
+- git diff // Permet d'afficher les modification apporté au fichier avant de le commit
  
