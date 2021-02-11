@@ -1,3 +1,6 @@
+Thèmes :
+-Code Blue
+
 Addons :
 - css peek
 - vscode-icons
@@ -7,7 +10,16 @@ Addons :
 - bracket pair colorizer
 - french language
 - html tag wrapper
-- live sass compiler
-- live server
+- snippets
 - sass
 - todo tree
+- pug to HTML
+
+- live server
+- live sass compiler
+- live pug compiler
+  -> settings.json
+  
+    "livePugCompiler.savePath": "/",
+    "livePugCompiler.saveExt": "html",
+    "livePugCompiler.startFolder": "/"
