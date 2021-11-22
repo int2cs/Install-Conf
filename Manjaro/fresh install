@@ -1,0 +1,17 @@
+sudo pacman -Syy
+sudo pacman -Syu
+
+sudo pacman -S rofi firefox-developer-edition caprine snapd rclone xfce4-sensors-plugin xfce4-netload-plugin xfce4-cpugraph-plugin xfce4-cpufreq-plugin xfce4-mailwatch-plugin --needed base-devel 
+
+
+// SNAP
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+
+sudo snap install code --classic
+sudo snap install notion-snap
+sudo snap install spotify
+
+
+// AUR
+aurman -S gitahead
