@@ -2,7 +2,7 @@ sudo pacman -Syy
 sudo pacman -Syu
 
 sudo pacman -S rofi firefox-developer-edition caprine snapd rclone xfce4-sensors-plugin xfce4-netload-plugin xfce4-cpugraph-plugin xfce4-cpufreq-plugin xfce4-mailwatch-plugin --needed base-devel 
-
+sudo pacman -S xfce4-battery-plugin (only for laptop)
 
 // SNAP
 sudo systemctl enable --now snapd.socket
