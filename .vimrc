@@ -16,7 +16,13 @@
 
 " PLUGINS ---------------------------------------------------------------- {{{
 
-" Plugin code goes here.
+"auto closing"
+ino " ""<left>
+ino ' ''<left>
+ino ( ()<left>
+ino [ []<left>
+ino { {}<left>
+ino { <CR> {<CR>}<ESC>O
 
 " }}}
 
@@ -29,19 +35,22 @@
 
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
-" Activer la numérotaion absolue des lignes
-:set nu
-" Passer un bufffer en arrière plan sans avoir besoin de l'enregistrer
+"theme
+colorscheme desert
+"Activer la numérotaion absolue des lignes
+:set rnu nu
+"Passer un bufffer en arrière plan sans avoir besoin de l'enregistrer
 :set hidden
 "Auto indentation
 :set ai
 "réglage indentation
 set tabstop =2
+set shiftwidth=2
 "colorisation syntaxique
 if has("syntax")
 	syntax on
 endif
-" Afficher la position du curseur
+"Afficher la position du curseur
 set ruler
 "retrouver facilement le curseur dans une page
 set cursorline
@@ -74,5 +83,6 @@ set encoding=utf-8
 " STATUS LINE ------------------------------------------------------------ {{{
 
 set laststatus=1
+
 " }}}
 
