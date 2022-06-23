@@ -1,3 +1,6 @@
+#Automatically starts tmux
+ZSH_TMUX_AUTOSTART=true
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -43,7 +46,8 @@ ZSH_THEME="gozilla"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
+setopt correct
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -80,6 +84,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   zsh-z
+	tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,3 +119,5 @@ source $ZSH/oh-my-zsh.sh
 
 export FZF_DEFAULT_COMMAND='fdfind --type f'
 export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --height=80%"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
